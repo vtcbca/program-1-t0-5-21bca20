@@ -1,0 +1,26 @@
+/*write a program to check enter number is prime or not
+date:24/12/2021*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int no,i,c=0;
+    clrscr();
+    printf("\n Enter any number:");
+    scanf("%d",&no);
+    i=2;
+    while(i<no)
+    {
+       if(no%i==0)
+    {
+       c=1;
+	 break;
+    }
+	i=i+1;
+    }
+    if(c==1)
+	printf("no is not prime");
+    else
+	printf("no is prime");
+    getch();
+}
